@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerFit Store</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  background: rgba(0,0,0,0.8);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+header h1 {
+  color: #00ff88;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00ff88;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1558611848-73f7eb4001ab') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 50px;
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* PRODUTOS */
+.produtos {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.produtos h2 {
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0;
+}
+
+.card p {
+  color: #00ff88;
+  font-size: 18px;
+}
+
+.card button {
+  background: #00ff88;
+  border: none;
+  padding: 10px 20px;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>PowerFit</h1>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Produtos</a>
+    <a href="#">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Transforme seu corpo hoje</h2>
+</section>
+
+<section class="produtos">
+  <h2>Produtos em Destaque</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e">
+      <h3>Whey Protein</h3>
+      <p>R$ 129,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1">
+      <h3>Creatina</h3>
+      <p>R$ 89,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b">
+      <h3>Pré-Treino</h3>
+      <p>R$ 99,90</p>
+      <button>Comprar</button>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 PowerFit - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PowerFit Elite</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+header h1 {
+  color: #00ffcc;
+  font-weight: 600;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #ddd;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00ffcc;
+  background-color: #7777774b;
+  padding: 5px;
+  border-radius: 10px
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to top, #000, transparent),
+              url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1') center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+}
+
+.hero h2 {
+  font-size: 60px;
+  max-width: 500px;
+}
+
+.hero p {
+  margin-top: 20px;
+  color: #aaa;
+  max-width: 400px;
+}
+
+.hero button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  border: none;
+  background: linear-gradient(45deg, #00ffcc, #00ff88);
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+}
+
+/* PRODUTOS */
+.produtos {
+  padding: 100px 60px;
+}
+
+.produtos h2 {
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: linear-gradient(145deg, #111, #1c1c1c);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.4s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #00ffcc;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* BANNER */
+.banner {
+  margin: 80px 60px;
+  padding: 60px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  text-align: center;
+  color: #000;
+}
+
+.banner h2 {
+  font-size: 36px;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  background: #000;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>PowerFit Elite</h1>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Produtos</a>
+    <a href="#">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Alta performance começa aqui</h2>
+  <p>Suplementos premium para evolução real. Mais força, mais resultado.</p>
+  <button>Explorar Produtos</button>
+</section>
+
+<section class="produtos">
+  <h2>Produtos em Destaque</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e">
+      <div class="card-content">
+        <h3>Whey Protein Gold</h3>
+        <p class="price">R$ 149,90</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b">
+      <div class="card-content">
+        <h3>Pré-Treino Hardcore</h3>
+        <p class="price">R$ 109,90</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1">
+      <div class="card-content">
+        <h3>Creatina Ultra</h3>
+        <p class="price">R$ 89,90</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="banner">
+  <h2>Frete grátis acima de R$199 🚀</h2>
+</section>
+
+<footer>
+  <p>© 2026 PowerFit Elite — Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

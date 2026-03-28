@@ -1,0 +1,34 @@
+body
+{
+    background-image: linear-gradient(45deg, rgb(128, 96, 54), rgb(190, 134, 28));
+    background-attachment: fixed;
+}
+
+main
+{
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    padding: 5px;
+}
+
+h1
+{
+    text-align: center;
+    font-family: serif;
+    font: italic bolder 2em 'work sans', sans-serif;
+    /*font-style -> font-weigth -> font-size -> font-family  */
+}
+
+img
+{
+    width: 100px;
+}
+
+p
+{
+    font-family: sans-serif;
+}
+

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zuest - Vestidos Elegantes</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#000;
+    color:white;
+}
+
+header{
+    background:#000;
+    border-bottom:2px solid #d4af37;
+    padding:20px;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#d4af37;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-right:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+.hero{
+    height:70vh;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url("https://images.unsplash.com/photo-1496747611176-843222e1e57c");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#d4af37;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.btn:hover
+{
+    color: rgba(255, 228, 196, 0.349);
+    background-color: #d4af3757;
+}
+
+.btn{
+    background:#d4af37;
+    color:black;
+    padding:12px 30px;
+    text-decoration:none;
+    font-weight:bold;
+    display:inline-block;
+    margin-top:20px;
+}
+
+.produtos{
+    padding:60px 10%;
+    text-align:center;
+}
+
+.produtos h2{
+    color:#d4af37;
+    font-size:36px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:#111;
+    padding:20px;
+    border:1px solid #d4af37;
+}
+
+.card img{
+    width:100%;
+}
+
+.card h3{
+    color:#d4af37;
+}
+
+.sobre{
+    padding:60px 10%;
+    background:#111;
+    text-align:center;
+}
+
+.sobre h2{
+    color:#d4af37;
+}
+
+.contato{
+    padding:60px 10%;
+    text-align:center;
+}
+
+footer{
+    background:#000;
+    border-top:2px solid #d4af37;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">ZUEST</div>
+<nav>
+<a href="#">Início</a>
+<a href="#produtos">Vestidos</a>
+<a href="#sobre">Sobre</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Elegância em Cada Vestido</h1>
+<p>Descubra a coleção exclusiva da Zuest</p>
+<a class="btn" href="#produtos">Ver Coleção</a>
+</div>
+</section>
+
+<section class="produtos" id="produtos">
+<h2>Nossos Vestidos</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1520975922284-2a91b1f0c2c4">
+<h3>Vestido Noite Luxo</h3>
+<p>R$ 399,90</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509631179647-0177331693ae">
+<h3>Vestido Elegance</h3>
+<p>R$ 349,90</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1495121605193-b116b5b09a6b">
+<h3>Vestido Dourado Premium</h3>
+<p>R$ 499,90</p>
+</div>
+
+</div>
+</section>
+
+<section class="sobre" id="sobre">
+<h2>Sobre a Zuest</h2>
+<p>
+A Zuest nasceu com a missão de trazer elegância e sofisticação
+para mulheres que desejam se destacar.  
+Nossos vestidos combinam luxo, estilo e qualidade.
+</p>
+</section>
+
+<section class="contato" id="contato">
+<h2>Contato</h2>
+<p>Email: contato@zuest.com</p>
+<p>Instagram: @zuest</p>
+<p>WhatsApp: (00) 00000-0000</p>
+</section>
+
+<footer>
+<p>© 2026 Zuest - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
